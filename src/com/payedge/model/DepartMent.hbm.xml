@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 21, 2016 5:33:49 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.payedge.model.DepartMent" table="DEPARTMENT">
+        <id name="department" type="int">
+            <column name="DEPARTMENT" />
+            <generator class="assigned" />
+        </id>
+        <property name="deptName" type="java.lang.String">
+            <column name="DEPTNAME" />
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 21, 2016 5:33:49 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.payedge.model.EmpEvaluation" table="EMPEVALUATION">
+        <id name="empId" type="java.lang.String">
+            <column name="EMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="goalNumber" type="long">
+            <column name="GOALNUMBER" />
+        </property>
+        <property name="empComment" type="java.lang.String">
+            <column name="EMPCOMMENT" />
+        </property>
+        <property name="empRate" type="int">
+            <column name="EMPRATE" />
+        </property>
+        <property name="mgrComment" type="java.lang.String">
+            <column name="MGRCOMMENT" />
+        </property>
+        <property name="mgrRate" type="int">
+            <column name="MGRRATE" />
+        </property>
+        <property name="empConfirmed" type="boolean">
+            <column name="EMPCONFIRMED" />
+        </property>
+        <property name="mgrConfirmed" type="boolean">
+            <column name="MGRCONFIRMED" />
+        </property>
+        <property name="hrConfirmed" type="boolean">
+            <column name="HRCONFIRMED" />
+        </property>
+    </class>
+</hibernate-mapping>
